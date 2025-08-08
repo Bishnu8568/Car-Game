@@ -36,13 +36,4 @@ public class CarController : MonoBehaviour
             Debug.Log("I've hit a Blue House");
         }
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "boost")
-        {
-            moveSpeed = moveSpeed * boostMultiplier;
-            Destroy(other.gameObject);
-        }
-    }
 }

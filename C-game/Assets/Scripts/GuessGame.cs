@@ -7,7 +7,6 @@ public class GuessGame : MonoBehaviour
     public int min = 0, max = 1000;
     int guess;
 
-    // Start is called before the first frame update
     void Start()
     {
         guess = (max + min) / 2;
@@ -15,8 +14,6 @@ public class GuessGame : MonoBehaviour
         Debug.Log("My guess is:" + guess);
         
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
