@@ -25,7 +25,7 @@ public class CarController : MonoBehaviour
         }
     }
 
-    /*void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "RedHouse")
         {
@@ -35,11 +35,11 @@ public class CarController : MonoBehaviour
         {
             Debug.Log("I've hit a Blue House");
         }
-    }*/
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Boost")
+        if (other.tag == "boost")
         {
             moveSpeed = moveSpeed * boostMultiplier;
             Destroy(other.gameObject);
